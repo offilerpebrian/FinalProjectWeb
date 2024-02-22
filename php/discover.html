@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles.css" />
+    <style>
+        .container {
+            width: 100%;
+        }
+
+        .row {
+            margin: 0;
+            padding: 0;
+        }
+
+        .col {
+            width: 156px;
+            height: 156px;
+            position: relative;
+            overflow: hidden;
+            margin: 10px;
+            padding: 0;
+            transition: transform 0.3s;
+        }
+
+        .col img {
+            object-fit: cover;
+            width: 100%;
+            height: 100%;
+        }
+        
+        .overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.5);
+            color: #fff;
+            font-size: 18px;
+            text-align: center;
+            padding: 20px;
+            opacity: 0;
+            transition: opacity 0.3s;
+        }
+
+        .col:hover .overlay {
+            opacity: 1;
+        }
+    </style>
+    <script src="https://unpkg.com/scrollreveal@4.1.1/dist/scrollreveal.min.js"></script>
+    <script>
+        // Inisialisasi ScrollReveal
+        ScrollReveal().reveal('.col', { duration: 1000, scale: 0.85 });
+    </script>
+    <title>Fragrance | world.id| Discover</title>
+</head>
+<body>
+    <header id="home">
+        <nav>
+          <div class="nav__bar">
+            <div class="nav__logo"><a href="main.html">FragrenceWorld.id</a></div>
+            <ul class="nav__links">
+              <li class="link"><a href="main.html">Beranda</a></li>
+              <li class="link"><a href="discover.html">Discover</a></li>
+              <li class="link"><a href="Kontak.html">Kontak</a></li>
+              <li class="link search">
+                <span><i class="ri-search-line"></i></span>
+              </li>
+            </ul>
+          </div>
+        </nav>
+    </header>
+    <div class="container discover-section">
+        <div class="row">
+            <div class="col" data-sr>
+                <img src="assets/" alt="Parfum 1">
+                <div class="overlay">Xerjoff Erba Pura <br><p> Notes : Citrus & Fruity</p> <p> Spl : 8 Jam</p></div>
+            </div>
+            <div class="col" data-sr>
+                <img src="discover/2.jpeg" alt="Parfum 2">
+                <div class="overlay"> Dior Sauvage Elixir <br><p> Notes : Fresh Spicy</p> <p> Spl : 12 Jam</p> </div>
+            </div>
+            <div class="col" data-sr>
+                <img src="discover/3.jpg" alt="Parfum 3">
+                <div class="overlay">Layton Eau de Parfum | Parfums de Marly <br><p>Notes :  Spicy Sweet</p><p> Spl : 8 Jam</p></div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col" data-sr>
+                <img src="discover/4.jpg" alt="Parfum 4">
+                <div class="overlay">Yves Saint Laurent Y Le Parfum Man <br><p> Notes : Bergamot & Woody</p> <p> Spl : 5-6 Jam</p></div>
+            </div>
+            <div class="col" data-sr>
+                <img src="discover/5.jpg" alt="Parfum 5">
+                <div class="overlay">Paco Rabanne 1 Million EDT <br><p>Notes :  Warm Spicy</p><p> Spl : 6+ Jam</p></div>
+            </div>
+            <div class="col" data-sr>
+                <img src="discover/10.jpg" alt="Parfum 6">
+                <div class="overlay">Maison Francis Kurkdjian Baccarat Rouge 540<br><p>Notes : Amber & Almond</p><p> Spl : 10+ Jam</p></div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col" data-sr>
+                <img src="discover/7.jpg" alt="Parfum 7">
+                <div class="overlay">	
+                  Christian Dior Homme Intense<br><p>Notes :  Lavender</p><p> Spl : 8+ Jam</p></div>
+            </div>
+            <div class="col" data-sr>
+                <img src="discover/8.jpg" alt="Parfum 8">
+                <div class="overlay">Giorgio Armani Acqua di Gio Profumo Man<br><p>Notes :  Bergamot & Aquatic</p><p> Spl : 6+ Jam</p></div>
+            </div>
+            <div class="col" data-sr>
+                <img src="discover/9.jpg" alt="Parfum 9">
+                <div class="overlay">Jean Paul Gaultier Le Male Le Parfum Intense Man<br><p>Notes :  Amber Aromatic & Vanilla</p><p> Spl : 10+ Jam</p></div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
